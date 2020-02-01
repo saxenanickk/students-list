@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Students List</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body style="margin: 0;">
+    <div class="header">
+      <h2>Students List</h2>
+      <div>
+        <input type="text" id="myInput" placeholder="Search student by name" />
+        <span onclick="search()" class="btn searchBtn">Search</span>
+      </div>
+      <div>
+        <span onclick="reset()" class="btn">Reset</span>
+        <span onclick="sortByName()" class="btn">Sort by Name</span>
+        <span onclick="sortByAge()" class="btn">Sort by Age</span>
+      </div>
+    </div>
+    <div id="listContainer"></div>
+    <div style="display: flex;flex:1;justify-content: space-between;">
+      <span onclick="previous()" class="btn searchBtn">Previous</span>
+      <span onclick="next()" class="btn searchBtn">Next</span>
+    </div>
+  </body>
+</html>
