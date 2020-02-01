@@ -138,7 +138,12 @@ sortByAge = () => {
 };
 
 deleteItem = index => {
-  currentData.splice(index, 1);
+  for (var i = 0; i < studentsData.length; i++) {
+    if (studentsData[i].name === currentData[index].name) {
+      studentsData.splice(i, 1);
+      currentData.splice(index, 1);
+    }
+  }
 
   list(currentData);
 };
