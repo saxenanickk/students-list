@@ -142,6 +142,7 @@ deleteItem = index => {
     if (studentsData[i].name === currentData[index].name) {
       studentsData.splice(i, 1);
       currentData.splice(index, 1);
+      break;
     }
   }
 
